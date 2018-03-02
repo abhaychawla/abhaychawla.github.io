@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+/* Home */
+#home {
+    height: 100%;
+}
+.home-background-image {
+    background: url("homepage.jpg") no-repeat center top fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100%;
+    display: flex;
+}
+.home-text {
+    position: relative;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+.home-text h1 {
+    letter-spacing: 5px;
+}
+.home-text p {
+    font-size: 35px;
+}
+.typing-animation-effect{
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type-animation 8s steps(80, end) infinite;
+    -webkit-animation: type-animation 8s steps(80, end) infinite;
+    -moz-animation: type-animation 8s steps(80, end) infinite;
+    -o-animation: type-animation 8s steps(80, end) infinite;
+}
+@keyframes type-animation {
+    from { width: 0%; }
+}
+@-webkit-keyframes type-animation {
+    from { width: 0%; }
+}
+@-moz-keyframes type-animation {
+    from { width: 0%; }
+}
+@-o-keyframes type-animation {
+    from { width: 0%; }
+}
+
+/* About */
+#about {
+    padding: 50px 0px;
+}
+.profile-image {
+    border: 10px solid lightgrey;
+    margin: 50px 0px;
+}
+
+/* Experience */
+#experience {
+    border-top: 5px solid #b2d3e6;
+    /* border-bottom: 5px solid #b2d3e6; */
+    padding: 100px 0px;
+}
+
+/* Education */
+#education {
+    border-top: 5px solid #8dbdd8;
+    /* border-bottom: 5px solid #8dbdd8; */
+    padding: 100px 0px;
+}
+
+/* Skills */
+#skills {
+    border-top: 5px solid #68a7ca;
+    /* border-bottom: 5px solid #68a7ca; */
+    padding: 100px 0px;
+}
+
+.devicon {
+    width: 180px;
+    margin: 15px;
+}
+
+.devicon:hover {
+    color: #007bff;
+}
+
+/* Achievements */
+#achievements {
+    border-top: 5px solid #4390bc;
+    /* border-bottom: 5px solid #4390bc; */
+    padding: 100px 0px;
+}
+
+/* Contact */
+#contact {
+    background-color: darkgray;
+    padding: 100px 0px;
+}
