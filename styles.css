@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     position: relative;
+    /* font-family: 'Roboto'; */
 }
 
 /* Navbar */
@@ -19,27 +20,41 @@ html, body {
     height: 100%;
 }
 .home-background-image {
-    background: url("homepage.jpg") no-repeat center top fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: white;
     height: 100%;
-    display: flex;
 }
 .home-text {
-    position: relative;
-    top: 45%;
+    position: absolute;
+    top: 40%;
     width: 100%;
     text-align: center;
 }
 .home-text h1 {
+    font-size: 55px;
     letter-spacing: 5px;
 }
 .home-text p {
     font-size: 35px;
 }
-.typing-animation-effect{
+@media (min-width: 768px) {
+    .home-background-image {
+        background: url("homepage.jpg") no-repeat center top fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .home-text {
+        top: 45%;
+    }
+    .home-text h1 {
+        font-size: 90px;
+    }
+    .home-text p {
+        font-size: 45px;
+    }
+}
+/* .typing-animation-effect{
     width: 100%;
     display: inline-block;
     white-space: nowrap;
@@ -60,7 +75,7 @@ html, body {
 }
 @-o-keyframes type-animation {
     from { width: 0%; }
-}
+} */
 
 /* About */
 #about {
