@@ -1,0 +1,383 @@
+html,
+body {
+    height: 100%;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    transition: background-color 2s ease-in-out;
+}
+
+.hide-brand {
+    display: none;
+}
+
+/* Home */
+#home {
+    height: 100%;
+    color: #fff;
+}
+
+.home-background-image {
+    background-color: #fff;
+    height: 100%;
+    background: url("../img/cover_image.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.home-background-image:after {
+    content: '';
+    background: linear-gradient(#000,#000);
+    width: 100%;
+    height: 70px;
+    opacity: .6;
+    display: block;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+}
+
+.home-text {
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    width: 100%;
+    text-align: right;
+}
+
+.home-text h1 {
+    font-size: 90px;
+    letter-spacing: 5px;
+}
+
+.home-text p {
+    font-size: 45px;
+}
+
+@media screen and (max-width: 1345px) {
+    .home-text h1 {
+        font-size: 80px;
+    }
+
+    .home-text p {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .home-text h1 {
+        font-size: 70px;
+    }
+
+    .home-text p {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .home-text h1 {
+        font-size: 60px;
+    }
+
+    .home-text p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .home-text h1 {
+        font-size: 50px;
+    }
+
+    .home-text p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-height: 465px), screen and (max-width: 740px) {
+    .home-text {
+        top: 60%;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .home-background-image {
+        background-position: 0 -100px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1185px) {
+    .home-background-image {
+        background-position: 0 -300px;
+    }
+}
+
+@media screen and (min-width: 1185px) {
+    .home-background-image {
+        background-position: 0 -400px;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: 15px;
+    color: #fff;
+}
+
+.scroll-down span {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #000;
+    text-align: center;
+}
+
+.scroll-down i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 9px;
+    color: #fff;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .scroll-down {
+        display: none;
+    }
+}
+
+/* About */
+#about {
+    padding: 75px 0px;
+}
+
+.profile-image {
+    border: 2px solid #000;
+    margin: 50px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-image {
+        max-width: 80%;
+    }
+}
+
+/* Experience */
+#experience {
+    border-top: 5px solid #b2d3e6;
+    padding: 100px 0px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.timeline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 303px;
+    height: 100%;
+    width: 3px;
+    background: #3498db;
+    z-index: 0;
+}
+
+.timeline:after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 40px;
+    background: #3498db;
+    background: linear-gradient(to bottom, #3498db, rgba(52,152,219,0));
+    top: 100%;
+    left: 303px;
+}
+
+.timeline-point {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: relative;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    border-radius: 50%;
+    z-index: 2;
+    float: left;
+    margin-left: 280px;
+}
+
+.timeline-icon i {
+    display: block;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.timeline-date {
+    width: 260px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: 300;
+    color: #374054;
+}
+
+.timeline-content {
+    margin-left: 350px;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.timeline-content h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #374054;
+    margin: 0;
+}
+
+.timeline-content h5 {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #7e8890;
+    margin: 0 0 15px 0;
+}
+
+.timeline-content p {
+    color: #74808a;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.timeline-content img {
+    max-width: 10%;
+    max-height: 10%;
+    display: block;
+    float: right;
+}
+
+@media screen and (max-width: 992px) {
+    .timeline-content img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .timeline:before,
+    .timeline:after {
+        left: 23px;
+    }
+
+    .timeline-icon {
+        margin-left: 0;
+    }
+
+    .timeline-date {
+        width: auto;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        display: block;
+        margin-left: 70px;
+    }
+
+    .timeline-content {
+        margin-left: 70px;
+    }
+}
+
+.spacing {
+    letter-spacing: 2px;
+}
+
+/* Education */
+#education {
+    border-top: 5px solid #8dbdd8;
+    padding: 100px 0px;
+}
+
+/* Skills */
+#skills {
+    border-top: 5px solid #68a7ca;
+    padding: 100px 0px;
+}
+
+.devicon {
+    width: 180px;
+    margin: 15px;
+}
+
+.devicon:hover {
+    color: #007bff;
+}
+
+/* Achievements */
+#achievements {
+    border-top: 5px solid #4390bc;
+    padding: 100px 0px;
+}
+
+/* Contact */
+
+/* Common */
+.heading {
+    position: relative;
+    font-size: 2em;
+    font-weight: 300;
+    top: 40%;
+}
+
+.heading:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #3498db;
+}

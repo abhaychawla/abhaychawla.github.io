@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         
@@ -10,14 +10,14 @@
         <title>Abhay Chawla</title>
         
         <!-- Favicon -->
-        <link href="favicon.ico" rel="icon">
+        <link href="img/favicon.ico" rel="icon">
         
         <!-- Google Fonts -->
-        <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         
         <!-- Bootstrap -->
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
         <!-- Devicons -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -26,24 +26,23 @@
         <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
         <!-- Custom styles -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
     
     </head>
     
-    <body data-spy="scroll" data-target="#navbarContent" data-offset="100">
+    <body data-spy="scroll" data-target="#navbarContent" data-offset="70">
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container">
                 <a href="#" class="navbar-brand">Abhay</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" 
-                aria-expanded="false" aria-label="Toggle navigation">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">   <!--active-->
-                            <a href="#home" class="nav-link">Home<!--<span class="sr-only">(current)</span>--></a>
+                        <li class="nav-item">   <!-- first active -->
+                            <a href="#home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#about" class="nav-link">About</a>
@@ -60,9 +59,6 @@
                         <li class="nav-item">
                             <a href="#achievements" class="nav-link">Achievements</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -78,6 +74,13 @@
                     <p><span class="typing-animation-effect"></span></p>
                 </div>
             </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <span>
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </a>
+            </div>
         </section>
         
         <!-- About -->
@@ -85,11 +88,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
-                        <img src="abhay.jpg" alt="profileImage" class="rounded-circle img-fluid profile-image d-block mx-auto" width="350" height="350" />
+                        <div class="row">
+                            <div class="col-lg-6 col-md-4">
+                                <h2 class="heading text-center">About Me</h2>
+                            </div>
+                            <div class="col-lg-6 col-md-8">
+                                <img src="img/abhay.jpg" alt="Profile Image" class="rounded-circle profile-image img-fluid d-block mx-auto">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-8 col-md-6 d-flex flex-column justify-content-center">
+                    <div class="col-lg-8 col-md-6">
                         <h2 class="font-weight-bold">Abhay Chawla</h2>
-                        <p>V-4/5, DLF Phase-3, Gurgaon-122002, Haryana | +91-9871105236</p>
+                        <p>Delhi, India | +91-9871105236</p>
                         <p class="lead text-justify">I am a self taught developer, passionate about making a difference in the society using technology. I believe we should have faith in ourselves to pursue and do what we love. I am keen to face the upcoming challenges and gain an opportunity to maximize my skills.</p>
                         <p class="lead font-italic text-justify">Let's be enthusiastic to explore and learn something new everyday!</p>
                     </div>
@@ -100,44 +110,150 @@
         <!-- Experience -->
         <section id="experience">
             <div class="container">
-                <h3 class="font-weight-bold mb-4">EXPERIENCE</h3>
-                <h4>HEAD OF COMPUTER SCIENCE CHAPTER</h4>
-                <h5>IEEE GTBIT</h5>
-                <p>Mar 2017 - Present</p>
-                <p class="text-justify">
-                    IEEE provides a platform to engage with like-minded developers throughout the world. 
-                    At our student branch, we continuously organize various events, competitions, workshops, lean-ins 
-                    including the celebrations for IEEE Day and Women's Day encouraging all interested in technology.
-                </p>
-                <p class="lead" style="letter-spacing: 2px;">
-                    <a href="https://www.facebook.com/ieeegtbit/" class="badge badge-pill badge-info">IEEE GTBIT</a>
-                </p>
-                <h4>VICE PRESIDENT</h4>
-                <h5>ANDROID TECHIES</h5>
-                <p>Nov 2017 - Present</p>
-                <p class="text-justify">
-                    We conduct regular hands-on workshops teaching java and android development from basics to intermediate level and 
-                    continuously encourage developers to come out of their comfort zones and share knowledge amongst each other.
-                </p>
-                <p class="lead" style="letter-spacing: 2px;">
-                    <a href="https://www.facebook.com/androidtechiesgtbit/" class="badge badge-pill badge-info">Android Techies</a>
-                </p>
+                <h3 class="heading text-center mb-4">Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-point">
+                        <div class="timeline-icon text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="timeline-block">
+                            <span class="timeline-date">
+                                June 2018 - Present
+                            </span>
+                            <div class="timeline-content">
+                                <img src="https://cdn.freebiesupply.com/logos/large/2x/udacity-logo-png-transparent.png" alt="Udacity Logo">
+                                <h4>Front End Web Developer 1 Nanodegree</h4>
+                                <h5>Udacity</h5>
+                                <p class="text-justify">
+                                    I am pursuing the Front End Web Developer Nanodegree from Udacity which covers HTML5, CSS, Javascript and various front end frameworks.
+                                </p>
+                                <p class="lead mt-1 spacing">
+                                    <a href="https://in.udacity.com/" class="badge badge-pill badge-info">Udacity</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="timeline-icon text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="timeline-block">
+                            <span class="timeline-date">
+                                April 2018 - Present
+                            </span>
+                            <div class="timeline-content">
+                                <img src="https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1401072286/v42evvabnvzdqupnlqdi.png" alt="Mifos Initiative Logo">
+                                <h4>Google Summer of Code Intern</h4>
+                                <h5>The Mifos Initiative</h5>
+                                <p class="text-justify">
+                                    The online banking and mobile banking app enables clients to create their self-service accounts and interact with their data all by themselves, 
+                                    removing certain dependencies to perform the same operations via the financial institution. 
+                                    Now the need arises to deliver better support to these users from the financial institutions by providing them with a mechanism to properly manage 
+                                    and give necessary assistance to users for carrying out their operations. 
+                                    My project, self-service user administrative portal strives to accomplish this, enabling the best utilization of these apps.
+                                </p>
+                                <p class="lead mt-1 spacing">
+                                    <a href="http://mifos.org/" class="badge badge-pill badge-info">Mifos</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="timeline-icon text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="timeline-block">
+                            <span class="timeline-date">
+                                February 2018 - May 2018
+                            </span>
+                            <div class="timeline-content">
+                                <img src="https://s3-us-west-2.amazonaws.com/udacity-email/Scholarships/Google-Scholarship-India-Badge.png?utm_medium=email&utm_campaign=sch_600_auto_ndxxx_accepted-google-india&utm_source=blueshift&utm_content=sch_600_auto_ndxxx_accepted-google-india&bsft_eid=d8fd1fe3-6ebc-4fc5-b432-3ecfb97e17fb&bsft_clkid=59ba5ff4-df2a-45a4-9aad-3a372b2939dd&bsft_uid=a8a8eea2-6276-40c3-9afe-104347393632&bsft_mid=9710f7d1-4355-4b1f-9ae9-4694752d27eb&bsft_txnid=e14b903d-1513-4716-9264-fbc4e733d6b4" alt="">
+                                <h4>Google India Challenge Scholarship Phase 1</h4>
+                                <h5>Google and Udacity</h5>
+                                <p class="text-justify">
+                                    I received a scholarship for the 3 month challenge course (phase 1) in the Mobile Web Specialist Track.
+                                    Apart from the course, it also involved discussion in forums moderated by expert Udacity mentors, a Slack workspace to interact with classmates and community managers
+                                    and participation in collaborative projects on Github.
+                                </p>
+                                <p class="lead mt-1 spacing">
+                                    <a href="https://in.udacity.com/" class="badge badge-pill badge-info">Udacity</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="timeline-icon text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="timeline-block">
+                            <span class="timeline-date">
+                                June 2016 - September 2017
+                            </span>
+                            <div class="timeline-content">
+                                <img src="https://gust-production.s3.amazonaws.com/uploads/startup/logo_image/809535/FB_20DP.png" alt="">
+                                <h4>Java Developer</h4>
+                                <h5>Medicians</h5>
+                                <p class="text-justify">
+                                    I was a part of the Medicians Pharmbooks Software Development Team responsible to build the software from the very beggining. Pharmbooks is a next generation Point of Sale Software for pharmacists and druggists across various domains and sizes. 
+                                    It provides an extended and comprehensive support along with the analytics that provides hands-on vital insights and information about the business. 
+                                    It is built with JavaFX and SQLite database.
+                                </p>
+                                <p class="lead mt-1 spacing">
+                                    <a href="http://www.pharmbooks.com" class="badge badge-pill badge-info">Pharmbooks</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="timeline-icon text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="timeline-block">
+                            <span class="timeline-date">
+                                June 2016 - June 2017
+                            </span>
+                            <div class="timeline-content">
+                                <img src="https://seeklogo.com/images/R/Rotaract_Club-logo-4857D70B45-seeklogo.com.png" alt="">
+                                <h4>Rotaract Club of New Delhi</h4>
+                                <h5>Member</h5>
+                                <p class="text-justify">
+                                    I was a part of the Medicians Pharmbooks Software Development Team responsible to build the software from the very beggining. Pharmbooks is a next generation Point of Sale Software for pharmacists and druggists across various domains and sizes. 
+                                    It provides an extended and comprehensive support along with the analytics that provides hands-on vital insights and information about the business. 
+                                    It is built with JavaFX and SQLite database.
+                                </p>
+                                <p class="lead mt-1 spacing">
+                                    <a href="http://www.rcndonline.in" class="badge badge-pill badge-info">RCND</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Education -->
         <section id="education">
             <div class="container">
-                <h3 class="font-weight-bold mb-4">EDUCATION</h3>
+                <h3 class="heading text-center mb-4">Education</h3>
                 <h4>GURU TEGH BAHADUR INSTITUTE OF TECHNOLOGY (affiliated to GGSIPU)</h4>
                 <h5>B.TECH. IN COMPUTER SCIENCE</h5>
                 <p>Aug 2015 - Present | Expected Aug 2019</p>
                 <p>CGPA 9.05 (up to 4 semesters)</p>
+                <p>
+                    Societies:
+                    <br>IEEE GTBIT (Current: Vice Chairperson, Previous: Co-Head of Computer Science Chapter)
+                    <br>Android Techies (Joint Vice President)
+                    <br>Computer Society of India (Member: 2015-2017)
+                </p>
                 <h4 class="mt-4">AMITY INTERNATIONAL SCHOOL, PUSHP VIHAR</h4>
                 <p>Apr 2007 - May 2015</p>
                 <p>
                     CBSE AISSCE (2015) - 94.6 %
-                    <br />CBSE AISSE (2013) - CGPA 10
+                    <br>CBSE AISSE (2013) - CGPA 10
+                </p>
+                <p>
+                    Bhagirathi House Captain 2014 - 2015
+                    <br>House Prefect 2013 - 2014
                 </p>
             </div>
         </section>
@@ -145,8 +261,8 @@
         <!-- Skills -->
         <section id="skills">
             <div class="container">
-                <h3 class="font-weight-bold mb-4">SKILLS</h3>
-                <h4>PROGRAMMING LANGUAGES AND TOOLS</h4>
+                <h3 class="heading text-center mb-4">Skills</h3>
+                <h4 class="text-center">Programming languages and tools</h4>
                 <ul class="list-inline text-center">
                     <li class="list-inline-item devicon">
                         <i class="display-3 devicon-java-plain-wordmark"></i>
@@ -178,8 +294,8 @@
                     <li class="list-inline-item devicon">
                         <i class="display-3 devicon-bootstrap-plain-wordmark"></i>
                     </li>
-                    <!-- <li class="list-inline-item devicon">
-                        <i class="display-1 devicon-angularjs-plain-wordmark"></i>
+                    <li class="list-inline-item devicon">
+                        <i class="display-3 devicon-angularjs-plain"></i>
                     </li>
                     <li class="list-inline-item devicon">
                         <i class="display-1 devicon-nodejs-plain-wordmark"></i>
@@ -187,9 +303,6 @@
                     <li class="list-inline-item devicon">
                         <i class="display-3 devicon-mongodb-plain-wordmark"></i>
                     </li>
-                    <li class="list-inline-item devicon">
-                        <i class="display-1 devicon-webstorm-plain-wordmark"></i>
-                    </li> -->
                 </ul>
             </div>
         </section>
@@ -197,37 +310,21 @@
         <!-- Achievements -->
         <section id="achievements">
             <div class="container">
-                <h3 class="font-weight-bold mb-4">ACHIEVEMENTS</h3>
-                <h4>SOFTWARE DEVELOPER</h4>
-                <h5>PHARMBOOKS BY MEDICIANS</h5>
-                <p>Jun 2016 - Sep 2017</p>
-                <p class="text-justify">I was a part of the Medicians Pharmbooks Software Development Team responsible to build the software from the very beggining. Pharmbooks is a next generation Point of Sale Software for pharmacists and druggists across various domains and sizes. 
-                    It provides an extended and comprehensive support along with the analytics that provides hands-on vital insights and information about the business. 
-                    It is built with Javafx and SQLite database.
-                </p>
-                <p class="lead" style="letter-spacing: 2px;">
-                    <a href="http://www.pharmbooks.com" class="badge badge-pill badge-info">www.pharmbooks.com</a>
-                </p>
-                <h4 class="mt-4">MEMBER</h4>
-                <h5>ROTARACT CLUB OF NEW DELHI</h5>
-                <p>Jun 2016 - Jun 2017</p>
-                <p class="text-justify">I was a member of Rotaract Club of New Delhi, a community service organisation responsible to bring about change in lives of people through support and guidance; shaping your personality as an individual.
-                    We organised various NGO visits, classes for women and children, tree plantation events, food distribution events, clothes donation drives, book donation drives, blood donation camps, workshops and rallies to spread awareness against numerous diseases, fellowships and events to bond and enjoy with the community throughout the year in Delhi-NCR.
-                </p>
-                <p class="lead" style="letter-spacing: 2px;">
-                    <a href="http://www.rcndonline.in" class="badge badge-pill badge-info">www.rcndonline.in</a>
-                </p>
+                <h3 class="heading text-center mb-4">Achievements</h3>
+                <h4 class="mt-4">Google I/O 2018 Trip (Scholarship)</h4>
+                <h5>Google and Pluralsight</h5>
+                <p>May 2018</p>
+                <h4 class="mt-4">Google India Challenge Scholarship Certification</h4>
+                <h5>Udacity</h5>
+                <p>February 2018 - May 2018</p>
+                <h4 class="mt-4">Winning Team</h4>
+                <h5>Young India Challenge</h5>
+                <p>November 2015</p>
             </div>
         </section>
 
         <!-- Contact -->
-        <!-- <section id="contact">
-            <div class="container">
-                <h3 class="font-weight-bold mb-4">CONTACT</h3>
-            </div>
-        </section> -->
-
-        <footer class="py-4 bg-dark text-center text-white">
+        <footer id="contact" class="py-4 bg-dark text-center text-white">
             <div class="container">
                 <ul class="list-inline">
                     <li class="list-inline-item">
@@ -256,21 +353,21 @@
                         </a>
                     </li>
                 </ul>
-                <small>Handmade by me &copy; 2018 | All rights reserved</small>
+                <small>Handmade by me © 2018 | All rights reserved</small>
             </div>
         </footer>
 
         <!-- Bootstrap -->
         <!-- Latest compiled JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <!-- Typewriter -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        
+        <!-- Typeit -->
+        <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js" integrity="sha256-wV/fTluTFUM+Lv1nAc3DgjOOZlo12Dlf8Rsn2x/LU08=" crossorigin="anonymous"></script>
 
         <!-- Custom script -->
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
 
     </body>
 </html>
